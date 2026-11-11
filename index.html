@@ -1076,7 +1076,7 @@ const sb=SB_READY?supabase.createClient(SB_URL,SB_KEY):null;
 
 let USER=null,authMode="login";
 // 아이디를 Supabase 이메일 로그인 형식으로 바꿔서 사용 (실제 메일은 보내지 않음)
-const toEmail=key=>"u"+Array.from(key).map(c=>c.codePointAt(0).toString(16).padStart(4,"0")).join("")+"@hitmonster.app";
+const toEmail=key=>"u"+Array.from(key).map(c=>c.codePointAt(0).toString(16).padStart(4,"0")).join("")+"@gmail.com";
 const nameOf=u=>(u&&u.user_metadata&&u.user_metadata.username)||"";
 function setAuth(t,err){const s=$("authstatus");s.className="status"+(err?" err":"");s.textContent=t;}
 function koErr(e){
