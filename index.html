@@ -1069,7 +1069,7 @@ $("home").onclick=()=>{setStatus("");go("start");};
 
 /* ---------- 계정 · 기록 (Supabase) ---------- */
 // 아래 두 줄을 Supabase 프로젝트 값으로 바꾸세요 (Project Settings → API)
-const SB_URL="https://eervbhmdggfjaviknisf.supabase.co/rest/v1";
+const SB_URL="https://eervbhmdggfjaviknisf.supabase.co";
 const SB_KEY="sb_publishable_f9rlqj74euo8jDsMb9TmPA_2MygFQnh";
 const SB_READY=SB_URL.startsWith("https://")&&!SB_URL.includes("__")&&!SB_KEY.includes("__")&&typeof supabase!=="undefined";
 const sb=SB_READY?supabase.createClient(SB_URL,SB_KEY):null;
